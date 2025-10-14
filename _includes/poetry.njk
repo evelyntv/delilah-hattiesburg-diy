@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Browse</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <header>
+        <h1>{{ title }}</h1>
+        <h2>by {{ author }}</h2>
+      </header>
+      <metadata>
+        <tags>
+          <p><strong>Tags: </strong>{{ tags }}</p>
+        </tags>
+        <date>
+          <p><strong>Date: </strong>{{ date }}</p>
+        </date>  
+      </metadata>
+      <main>
+        {{ content | safe }}
+      </main>
+    </div>
+</body>
+</html>
