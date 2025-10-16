@@ -1,5 +1,4 @@
-
-/* i really think less colors are more here. */
+/* || BASE */
 :root {
     /* Color Palette */
     --primary-color: #171313;
@@ -25,7 +24,8 @@ body {
     align-items: center;
 }
 
-.container {
+/* || LAYOUT */
+.works-grid {
     display: grid;
     grid-template-areas: 
     "nav nav nav"
@@ -33,10 +33,12 @@ body {
     "metadata main main"
     "footer footer footer";
     margin-left: 10%;
-    /* grid-template-columns: 20%, 40px, 1fr, 1fr; */
-    /* justify-content: center; */
+    margin-right: 10%;
+    grid-template-columns: min-content auto auto;
+    column-gap: 2em;
 }
 
+/* || MODULES */
 nav {
     grid-area: nav;
     display: flex;
@@ -79,7 +81,7 @@ header h2 {
 metadata {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    min-width: 300px;
 }
 
 tags {
@@ -89,10 +91,6 @@ tags {
     border-style: solid none none none;
 }
 
-/* tags p {
-    width: 50%;
-} */
-
 date {
     display: flex;
     flex-direction: row;
@@ -101,6 +99,11 @@ date {
     border-style: solid none none none;
 }
 
-/* date p {
-    width: 50%
-} */
+main {
+    grid-area: main;
+}
+
+mainFiction {
+    grid-area: main;
+    text-indent: 1em;
+}
