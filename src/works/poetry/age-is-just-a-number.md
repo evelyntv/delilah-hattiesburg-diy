@@ -2,7 +2,6 @@
 title: Age is Just a Number
 date: 2024-05-10
 author: Delilah Chamberlain
-# permalink: "poetry/{{title | slugify}}/index.html"
 ---
 
 I'm high in a bed with someone else's sex sheets\
