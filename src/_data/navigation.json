@@ -1,0 +1,20 @@
+{
+	"items": [
+		{
+			"text": "Home",
+			"url": "/"
+		},
+		{
+			"text": "About",
+			"url": "/about-us/"
+		},
+		{
+			"text": "Works",
+			"url": "/"
+		},
+		{
+			"text": "Contact",
+			"url": "/contact/"
+		}
+	]
+}

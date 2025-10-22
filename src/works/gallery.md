@@ -1,4 +1,5 @@
 ---
+layout: gallery
 title: test
 ---
 
@@ -6,6 +7,7 @@ title: test
 <ul>
     {%- for work in collections.poetry -%}
         <li><a href="{{ work.url | url }}"> {{ work.data.title }} </a></li>
+            <li> {{ work.data.main }} </li>
     {%- endfor -%}
 </ul>
 

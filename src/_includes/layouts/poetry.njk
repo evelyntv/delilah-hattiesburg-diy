@@ -1,0 +1,20 @@
+{% extends "layouts/base.njk" %}
+{% block content %}
+<div class="works-grid">
+  <header>
+    <h1>{{ title }}</h1>
+    <h2> by {{ author }} </h2>
+  </header>
+  <metadata>
+    <tags>
+      <p><strong>Tags: </strong>{{ tags }}</p>
+    </tags>
+    <date>
+      <p><strong>Date: </strong>{{ date | postDate }}</p>
+    </date>  
+  </metadata>
+  <main>
+    {{ content | safe }}
+  </main>
+</div>
+{% endblock %}
